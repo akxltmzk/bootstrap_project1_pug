@@ -3,61 +3,179 @@ extends layout
 block content
   //- navbar section
   nav.navbar.navbar-expand-sm.bg-dark.navbar-dark.fixed-top#main-nav
-    div.container
+    .container
       a.navbar-brand(href="/") LoopLab
       button.navbar-toggler(data-toggle="collapse" data-target="#navbarCollapse")
         span.navbar-toggler-icon
-      div.collapse.navbar-collapse#navbarCollapse
+      .collapse.navbar-collapse#navbarCollapse
         ul.navbar-nav.ml-auto
           li.nav-item
-            a.nav-link(href="#home") Home
+            a.nav-link(href="#home-section") Home
           li.nav-item
-            a.nav-link(href="#explore") Explore
+            a.nav-link(href="#explore-head-section") Explore
           li.nav-item
-            a.nav-link(href="#create") Create
+            a.nav-link(href="#create-head-section") Create
           li.nav-item
-            a.nav-link(href="#share") Share
+            a.nav-link(href="#share-head-section") Share
 
-    //- home section
+  //- home section
   header#home-section
-    div.dark-overlay
-      div.home-inner.container
-        div.row 
-          div.col-lg-8.d-none.d-lg-block
+    .dark-overlay
+      .home-inner.container
+        .row 
+          .col-lg-8.d-none.d-lg-block
             h1.display-4 Build #[strong social profiles] 
               | and gain revenue #[strong profits]
-            div.d-flex 
-              div.p-4.align-self-start 
+            .d-flex 
+              .p-4.align-self-start 
                 i.fas.fa-check.fa-2x
-              div.p-4.align-self-end Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, 
+              .p-4.align-self-end Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, 
                                   | porro quod quaerat quo aut tempora repellendus, maiores ad dolor,
                                   | ipsa sapiente soluta obcaecat
-            div.d-flex 
-              div.p-4.align-self-start 
+            .d-flex 
+              .p-4.align-self-start 
                 i.fas.fa-check.fa-2x
-              div.p-4.align-self-end Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, 
+              .p-4.align-self-end Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, 
                                   | porro quod quaerat quo aut tempora repellendus, maiores ad dolor,
                                   | ipsa sapiente soluta obcaecat
-            div.d-flex 
-              div.p-4.align-self-start 
+            .d-flex 
+              .p-4.align-self-start 
                 i.fas.fa-check.fa-2x
-              div.p-4.align-self-end Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, 
+              .p-4.align-self-end Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, 
                                   | porro quod quaerat quo aut tempora repellendus, maiores ad dolor,
                                   | ipsa sapiente soluta obcaecat
-          div.col-lg-4 
-            div.card.bg-primary.text-center.card-form 
-              div.card-body 
+          .col-lg-4 
+            .card.bg-primary.text-center.card-form 
+              .card-body 
                 h3 Sign Up Today
                 p Pease fill out this form to register
                 form
-                  div.form-group
+                  .form-group
                     input.form-control.form-control-lg(type="text" placeholder="Username")
-                  div.form-group
+                  .form-group
                     input.form-control.form-control-lg(type="email" placeholder="Email")
-                  div.form-group
+                  .form-group
                     input.form-control.form-control-lg(type="password" placeholder="Password")
-                  div.form-group
+                  .form-group
                     input.form-control.form-control-lg(type="password" placeholder="Confirm Password")
                   input.btn.btn-outline-light.btn-block(type="Submit")
+ 
+  //- explore head
+  section#explore-head-section
+    .container
+      .row
+        .col.text-center.py-5
+          h1.display-4 Explore
+          p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                | Amet error ex voluptatum exercitationem beatae aliquam, molestiae 
+                | dignissimos repellat harum expedita est aut dolores, tenetur culpa
+          a.btn.btn-outline-secondary(href="#") Find Out More      
 
+  //- explore section
+  section#explore-section.bg-white.text-muted.py-5
+    .container
+      .row
+        .col-md-6
+          img.img-fluid.mb-3.rounded-circle(src="images/explore-section1.jpg" alt="")
+        .col-md-6 
+          h3 Explore & Connect
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum aliquam 
+            | amet aliquid odit esse porro itaque hic soluta possimus il
+          .d-flex
+            .p-4.align-self-start
+              i.fas.fa-check.fa-2x
+            .p-4.align-self-start 
+              | nsectetur, adipisicing elit. Illum aliquam asadgasdgasdg wargharh
+          .d-flex
+            .p-4.align-self-start
+              i.fas.fa-check.fa-2x
+            .p-4.align-self-start 
+              | nsectetur, adipisicing elit. Illum aliquam asdgasdgasdghr aesrhaersh
 
+  //- create head
+  section#create-head-section.bg-primary
+    .container
+      .row
+        .col.text-center.py-5
+          h1.display-4 Create
+          p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                | Amet error ex voluptatum exercitationem beatae aliquam, molestiae 
+                | dignissimos repellat harum expedita est aut dolores, tenetur culpa
+          a.btn.btn-outline-light(href="#") Find Out More
+  
+  //- create section
+  section#create-section.py-5 
+    .container
+      .row  
+        .col-md-6.order-2
+          img.img-fluid.mb-3.rounded-circle(src="images/create-section1.jpg" alt="")
+        .col-md-6.order-1
+          h3 Create Your Passion
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam pariatur consequuntur iure
+            | nisi vitae amet, ducimus illum? Odit quasi eius
+          .d-flex
+            .p-4.align-self-start
+              i.fas.fa-check.fa-2x
+            .p-4.align-self-start
+               | Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperi
+          .d-flex
+            .p-4.align-self-start
+              i.fas.fa-check.fa-2x
+            .p-4.align-self-start
+               | Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperi
+  
+  //- share head
+  section#share-head-section.bg-primary
+    .container
+      .row
+        .col.text-center.py-5
+          h1.display-4 Share
+          p.lead Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                | Amet error ex voluptatum exercitationem beatae aliquam, molestiae 
+                | dignissimos repellat harum expedita est aut dolores, tenetur culpa
+          a.btn.btn-outline-light(href="#") Find Out More      
+
+  //- share section
+  section#share-section.bg-white.text-muted.py-5
+    .container
+      .row
+        .col-md-6
+          img.img-fluid.mb-3.rounded-circle(src="images/share-section1.jpg" alt="")
+        .col-md-6 
+          h3 Share What You Find
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum aliquam 
+            | amet aliquid odit esse porro itaque hic soluta possimus il
+          .d-flex
+            .p-4.align-self-start
+              i.fas.fa-check.fa-2x
+            .p-4.align-self-start 
+              | nsectetur, adipisicing elit. Illum aliquam asadgasdgasdg wargharh
+          .d-flex
+            .p-4.align-self-start
+              i.fas.fa-check.fa-2x
+            .p-4.align-self-start 
+              | nsectetur, adipisicing elit. Illum aliquam asdgasdgasdghr aesrhaersh
+
+  //- footer
+  footer#main-footer.bg-card
+    .container
+      .row
+        .col.text-center.py-4
+          h4 LoopLap
+          p CopyRight &copy; 
+            span#year
+          button.btn.btn-primary(data-toggle="modal" data-target="contactModal") Contact us
+  
+  //- contact modal
+  .modal.fade.text-dark#contactModal
+    .modal-dialog
+      .modal-content 
+        .modal-header
+          h5.modal-title Conact Us
+          button.close(data-dismiss="modal")
+           span &times;
+        .modal-body
+          form(action="")
+            .form-group
+              label(for="name") Name
+              input.form-control(type="text")
